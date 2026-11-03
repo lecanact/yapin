@@ -3,16 +3,23 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "yapin.py"
+name = "yapin"
 version = "1.0.0"
 authors = [
   { name="LeAndre C.", email="leandre@lecanact.me" },
 ]
-description = "An Unofficial Python Library For Creating Bots On Yapin'"
+description = "A Python library for creating bots on Yapin', built on yapper.py"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "yapper.py>=1.5.0",
     "python-dotenv>=1.2.4",
+]
+keywords = [
+    "yapin",
+    "yapper.py",
+    "yapper",
+    "bot",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -22,8 +29,8 @@ license = "GPL-3.0-only"
 license-files = ["LICEN[CS]E*"]
 
 [project.urls]
-Repository = "https://github.com/lecanact/yapin.py"
-Issues = "https://github.com/lecanact/yapin.py/issues"
+Repository = "https://github.com/lecanact/yapin"
+Issues = "https://github.com/lecanact/yapin/issues"
 Documentation = "https://yapin.gg/developers"
 
 [tool.setuptools.packages.find]
